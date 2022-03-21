@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding:0;
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 930px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+nav ul, nav li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    display: flex;   
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: #727272;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ACTIVE APENAS O 'INICIO' ficara com a cor azul*/
+/* hover quando eu passo o mouse mudara de cor*/
+nav .active a, nav a:hover{
+    background-color: aqua;
+    color:#FFFFFF;
+}
+
+#banner{
+    background-image: url('../images/img1.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+
+.banner_headline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_options{
+    height: 210px;
+    
+}
+.banner_headline h1{
+    color:#FFFFFF;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555555;
+    max-width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner_headline h2{
+    color: #FFFFFF;
+    font-size: 20px;
+    text-shadow:  0px 1px 0px;
+    max-width: 350px; 
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+.banner1,.banner2,.banner3{
+    flex:1;
+    color: #FFFFFF;
+    padding: 20px;
+}
+.banner1{
+    background-color: #3c096c;
+}
+.banner2{
+    background-color: #7b2cbf;
+}
+.banner3{
+    background-color: #b3228f;
+}
