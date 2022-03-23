@@ -12,7 +12,7 @@ header{
 .container{
     display: flex;
     justify-content: space-between;
-    width: 930px;
+    width: 990px;
 }
 
 .logo{
@@ -25,13 +25,12 @@ header{
     align-items: center;
 }
 nav ul, nav li{
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-nav ul{
-    display: flex;   
-}
+} 
+
 nav a{
     display: block;
     text-decoration: none;
@@ -42,18 +41,21 @@ nav a{
 /* ACTIVE APENAS O 'INICIO' ficara com a cor azul*/
 /* hover quando eu passo o mouse mudara de cor*/
 nav .active a, nav a:hover{
-    background-color: aqua;
+    background-color: #cc31da;
     color:#FFFFFF;
 }
 
 #banner{
+    display: flex;
+    justify-content: center;
     background-image: url('../images/img1.jpeg');
     background-position: center;
     background-size: cover;
-    height: 670px;
+    height: 880px;
 }
 
 .banner_headline{
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,7 +63,8 @@ nav .active a, nav a:hover{
 
 .banner_options{
     height: 210px;
-    
+    display: flex
+    ;
 }
 .banner_headline h1{
     color:#FFFFFF;
@@ -82,6 +85,7 @@ nav .active a, nav a:hover{
     flex:1;
     color: #FFFFFF;
     padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .banner1{
     background-color: #3c096c;
@@ -91,4 +95,86 @@ nav .active a, nav a:hover{
 }
 .banner3{
     background-color: #b3228f;
+}
+.banner_title{
+    font-size: 21px;
+}
+.banner_desc{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner_options a{
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.column{
+    flex-direction: column;
+}
+#geral{
+    display: flex;
+    justify-content: center;
+}
+.widget_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.widget_title_text{
+    color: midnightblue;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.widget_title_bar{
+    width: 50px;
+    height: 5px;
+    background-color: #b3228f;
+    margin-top: 10px;
+}
+#rodape{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    line-height: 40px;
+    color: #555555;
+    font-size: 12px;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 800px){
+
+    .container{
+        
+    }
+
+    .banner_headline h1{
+        font-size: 55px;
+        padding: 20px;
+    }
+
+    .banner_headline h2{
+        font-size: 17px;
+    }
+
+    .banner_options{
+        height: auto;
+        flex-direction: column;
+    }
+
+    #geral{
+        padding: 20px;
+    }
+
+    #rodape{
+        flex-direction: column;
+        padding: 20px;
+    }
+
 }
